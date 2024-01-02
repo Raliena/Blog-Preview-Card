@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+    body {
+      background-color: #f5ce59;
+      min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0; /* Remove default body margin */
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: 375px;
+      background-color: white;
+      padding: 20px; /* Add some padding for better appearance */
+      border: 2px solid black;
+      filter: drop-shadow(8px 5px 0px #000000);
+      border-radius: 15px;
+      font-family: 'Figtree', sans-serif;      
+    }
+    .card img {
+      max-width: 100%;
+      padding-top: 1rem;
+    }
+  
+    .published {
+      font-weight: bolder;
+    }
+
+    .card button {
+      background-color: #f5ce59;
+      border: none;
+      padding: 8px 15px 8px 15px;
+      border-radius: 5px;
+      width: fit-content;
+      margin-top: 20px;
+      font-weight: bolder;
+
+  }
+
+  .text {
+    font-weight: 100;
+  }
+
+  .credit {
+    display: flex;
+    align-items: center;
+  }
+
+  .credit p {
+    margin-left: 10px;
+  }
+
+  .text h1:hover {
+    color: #f5ce59;
+    transition: all 0.3s ease 0s;
+
+  }
+
+  .card:hover {
+    filter: drop-shadow(20px 15px 0px #000000);
+    transition: all 0.3s ease 0s;
+  }
+  
+  </style>
+</head>
+<body>
+  
+  <div class="card">
+
+    <img src="./assets/images/illustration-article.svg" alt="Learning image"/>
+
+    <button>Learning</button>
+    <p class="published">Published 21 Dec 2023</p>
+
+    <div class="text">
+    <h1>HTML & CSS foundations</h1>
+    <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    </div>
+
+    <div class="credit">
+    <img src="./assets/images/image-avatar.webp" alt="greg hooper icon"> 
+    <p>Greg Hooper</p>
+    </div>
+
+  </div>
+
+
+</body>
+</html>
